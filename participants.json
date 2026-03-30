@@ -9,6 +9,28 @@
       "M": "Man",
       "W": "Woman",
       "O": "Other"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Sex",
+        "Label": "Sex"
+      },
+      "VariableType": "Categorical",
+      "Levels": {
+        "Man": {
+          "TermURL": "snomed:248153007",
+          "Label": "Male"
+        },
+        "Other": {
+          "TermURL": "snomed:32570681000036106",
+          "Label": "Other"
+        },
+        "Woman": {
+          "TermURL": "snomed:248152002",
+          "Label": "Female"
+        }
+      },
+      "MissingValues": []
     }
   },
   "Sex": {
@@ -20,7 +42,27 @@
   },
   "Age": {
     "Description": "Age of the participant",
-    "Units": "years"
+    "Units": "years",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Age",
+        "Label": "Age"
+      },
+      "VariableType": "Continuous",
+      "Format": {
+        "TermURL": "nb:FromFloat",
+        "Label": "float"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
+    }
   },
   "Race": {
     "Description": "Race of the participant",
@@ -44,6 +86,16 @@
     "Levels": {
       "B": "BYU",
       "U": "USF"
+    }
+  },
+  "participant_id": {
+    "Description": "",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:ParticipantID",
+        "Label": "Participant ID"
+      },
+      "VariableType": "Identifier"
     }
   }
 }
